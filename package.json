@@ -1,8 +1,11 @@
 {
   "name": "feedbackapp",
   "private": true,
+  "proxy": "http://localhost:5000",
   "version": "0.0.0",
   "type": "module",
+
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -10,6 +13,7 @@
     "server": "json-server --watch db.json --port 5000",
     "dev2":"concurrently \"npm run server\" \"npm run dev\""
   },
+
   "dependencies": {
     "concurrently": "^7.6.0",
     "framer-motion": "^4.1.17",
